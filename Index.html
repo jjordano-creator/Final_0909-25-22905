@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcuraptor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <header>
     <h1>Calcuraptor</h1>
@@ -17,7 +18,7 @@
         <button onclick="atenderCliente()">Atender</button>
     </div>
     <div class="container" id="saludoContainer" style="display: none;">
-        <h3 id="saludo">Buenos dias, "id=nombre"!</h3>
+        <h3 id="saludo">Buenos dias, "id=nombre"</h3>
     </div>
     <div class="container">
         <h2>Calculadora de Compras</h2>
@@ -25,7 +26,9 @@
         <input type="number" id="precio" placeholder="Precio del producto">
         <p>Ingrese la cantidad de productos:</p>
         <input type="number" id="cantidad" placeholder="Cantidad de productos (enteros por favorcito)">
-        <button onclick="calcularCosto()">Calcular Costo Total</button>
-        <h3 id="resultado"></h3>
+        <button onclick="calcularCosto()">Calcular Total</button>
+        <h3 id="resultado">El total es "id="resultado"</h3>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
