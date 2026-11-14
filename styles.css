@@ -1,7 +1,5 @@
 :root {
-  --fondo: #6399e9;         
-  --panel: #5c89c9;         
-  --panel-claro: #1b3350;    
+  --fondo: #6399e9;           
   --borde: #2a4467;        
   --texto: #e4ebf5;          
   --texto-suave: #9db0c9;   
@@ -35,7 +33,7 @@ main {
   padding-bottom: 1rem;
 }
 button {
-  background: var(--acento);
+  background: var(--borde);
   color: var(--texto);
   border: none;
   padding: 0.5rem 1rem;

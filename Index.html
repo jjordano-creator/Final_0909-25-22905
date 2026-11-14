@@ -27,8 +27,28 @@
         <p>Ingrese la cantidad de productos:</p>
         <input type="number" id="cantidad" placeholder="Cantidad de productos (enteros por favorcito)">
         <button onclick="calcularCosto()">Calcular Total</button>
-        <h3 id="resultado"></h3>
+        <output id="resultado" aria-live="polite"></output>
     </div>
     <script src="script.js"></script>
+    <script>
+        function atenderCliente() {
+            const nombre = document.getElementById('nombre').value.trim();
+            document.getElementById('nombreMostrado').textContent = nombre || 'cliente';
+            document.getElementById('saludoContainer').style.display = 'block';
+        }
+
+        function calcularCosto() {
+            const precio = Number(document.getElementById('precio').value);
+            const cantidad = Number(document.getElementById('cantidad').value);
+            const resultado = document.getElementById('resultado');
+
+            if (!Number.isFinite(precio) || precio <= 0 || !Number.isInteger(cantidad) || cantidad <= 0) {
+                resultado.textContent = 'Ingrese un precio y una cantidad válida.';
+                return;
+            }
+
+            resultado.textContent = `Total: Q ${(precio * cantidad).toFixed(2)}`;
+        }
+    </script>
 </body>
 </html>
