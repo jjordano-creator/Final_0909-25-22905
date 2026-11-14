@@ -34,3 +34,12 @@ main {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
+button {
+  background: var(--acento);
+  color: var(--texto);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
