@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcuraptor</title>
+</head>
+<header>
+    <h1>Calcuraptor</h1>
+</header>
+<body>
+    <div class="container">
+        <h2>Bienvenido a la Calcuraptora</h2>
+        <h4>Calcula fácil el costo de tu compra.</h4>
+        <p>Ingrese su nombre para atendendolo con toda la amabilidad.</p>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre">
+        <button onclick="atenderCliente()">Atender</button>
+    </div>
+    <div class="container" id="saludoContainer" style="display: none;">
+        <h3 id="saludo">Buenos dias, "id=nombre"!</h3>
+    </div>
+    <div class="container">
+        <h2>Calculadora de Compras</h2>
+        <p>Ingrese el precio del producto:</p>
+        <input type="number" id="precio" placeholder="Precio del producto">
+        <p>Ingrese la cantidad de productos:</p>
+        <input type="number" id="cantidad" placeholder="Cantidad de productos (enteros por favorcito)">
+        <button onclick="calcularCosto()">Calcular Costo Total</button>
+        <h3 id="resultado"></h3>
+</body>
+</html>
