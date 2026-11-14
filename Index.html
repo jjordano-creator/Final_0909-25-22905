@@ -10,24 +10,24 @@
     <h1>Calcuraptor</h1>
 </header>
 <body>
-    <div class="container">
+    <div class="contenedor">
         <h2>Bienvenido a la Calcuraptora</h2>
         <h4>Calcula fácil el costo de tu compra.</h4>
         <p>Ingrese su nombre para atendendolo con toda la amabilidad.</p>
         <input type="text" id="nombre" placeholder="Ingrese su nombre">
         <button onclick="atenderCliente()">Atender</button>
     </div>
-    <div class="container" id="saludoContainer" style="display: none;">
-        <h3 id="saludo">Buenos dias, "id=nombre"</h3>
+    <div class="contenedor" id="saludoContainer" style="display: none;">
+        <h3 id="saludo">Buenos dias, <span id="nombreMostrado"></span>!</h3>
     </div>
-    <div class="container">
+    <div class="contenedor">
         <h2>Calculadora de Compras</h2>
         <p>Ingrese el precio del producto:</p>
         <input type="number" id="precio" placeholder="Precio del producto">
         <p>Ingrese la cantidad de productos:</p>
         <input type="number" id="cantidad" placeholder="Cantidad de productos (enteros por favorcito)">
         <button onclick="calcularCosto()">Calcular Total</button>
-        <h3 id="resultado">El total es "id="resultado"</h3>
+        <h3 id="resultado"></h3>
     </div>
     <script src="script.js"></script>
 </body>
